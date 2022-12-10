@@ -26,6 +26,7 @@ public class Students extends Person {
     }
 
     public void setFieldOfStudy(String fieldOfStudy) {
+
         this.fieldOfStudy = fieldOfStudy;
     }
 
@@ -43,5 +44,25 @@ public class Students extends Person {
 
     public void setGrade(char grade) {
         this.grade = grade;
+    }
+
+
+    public void study(){
+        System.out.println(getStudentId()+ ", "+ getName()+ "= is studying.");
+
+
+
+    }
+
+    @Override
+    public String toString() {
+        return "Students{"
+        return getClass().getSimpleName()+"{" +
+                super.toString() +
+                "studentId='" + studentId + '\'' +
+                ", fieldOfStudy='" + fieldOfStudy + '\'' +
+                ", schoolName='" + schoolName + '\'' +
+                ", grade=" + grade +
+                '}';
     }
 }

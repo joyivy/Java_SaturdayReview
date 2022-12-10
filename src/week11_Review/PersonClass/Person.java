@@ -54,5 +54,9 @@ public class Person {
                 ", gender=" + gender ;
 
     }
+    public void eat(){
+        System.out.println(" is eating. " + name);
+
+    }
 }
 

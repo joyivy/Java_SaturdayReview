@@ -19,7 +19,7 @@ public class Person {
     }
 
     public void setName(String name) {
-        if (name.isEmpty() || name==null){
+        if (name.isEmpty() || name == null) {
             System.err.println("Name can be empty or null");
             System.exit(1);
         }
@@ -31,7 +31,7 @@ public class Person {
     }
 
     public void setAge(int age) {
-        if (age <=0){
+        if (age <= 0) {
             System.err.println("Age can not be zero or negative!!" + age);
             System.exit(1);
         }
@@ -50,13 +50,20 @@ public class Person {
     public String toString() {
         return
                 "name='" + name + '\'' +
-                ", age=" + age +
-                ", gender=" + gender ;
+                        ", age=" + age +
+                        ", gender=" + gender;
 
     }
-    public void eat(){
+
+    public void eat() {
         System.out.println(" is eating. " + name);
 
     }
-}
 
+    public void drink() {
+        System.out.println(" is drinking. " + name);
+    }
+    public void sleep() {
+        System.out.println(" is sleeping. " + name);
+    }
+}

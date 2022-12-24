@@ -1,6 +1,6 @@
 package week13_Review;
 
-public class Employee {
+public abstract class Employee {
 
     private String name;
     private int age;
@@ -60,5 +60,19 @@ public class Employee {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    public abstract  void work();
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName()+"{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", id='" + id + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", salary=" + salary +
+                '}';
     }
 }
